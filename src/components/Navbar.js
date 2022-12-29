@@ -60,7 +60,7 @@ function MyNavbar() {
                 }
                 href="#projects"
               >
-                Project
+                Projects
               </a>
             </li>
             <li className="nav-item">
@@ -72,7 +72,7 @@ function MyNavbar() {
                 aria-current="page"
                 href="#contact"
               >
-                Contact
+                Contact me
               </a>
             </li>
           </ul>

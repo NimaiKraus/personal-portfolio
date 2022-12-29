@@ -1,5 +1,4 @@
 @import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,700&display=swap');
 
@@ -68,13 +67,14 @@ a:hover {
 nav.navbar {
   position: fixed;
   top: 0px;
-  padding: 10px 10px 10px 70px;
+  padding: 10px 30px 10px 70px;
   z-index: 99999;
   color: $text-color;
   width: 100%;
-  transition: all 0.5s;
+  transition: 0.5s;
   border-radius: 0px 0px 5px 5px;
   &.bg-navbar {
+    transition: background 0.5s;
     background: $dark-gradient;
   }
   a.navbar-brand {
@@ -92,7 +92,8 @@ nav.navbar {
         transition: 0.3s;
         font-size: 22px;
         &.active {
-          color: $primary-color;
+          color: yellow;
+          font-weight: 800;
         }
         &:hover {
           transform: scale(1.1);
@@ -111,7 +112,7 @@ nav.navbar {
         margin: 0px 8px;
       }
       a.nav-link:hover {
-        background-color: $primary-color;
+        transform: scale(1.2);
       }
     }
     button.connect-btn {
@@ -170,11 +171,11 @@ div.container-fluid {
           cursor: default;
         }
         p {
-          font-size: 50px;
+          font-size: 65px;
           font-weight: 700;
           margin: 10px 0px 10px;
           &.myName {
-            font-size: 50px;
+            font-size: 65px;
             font-weight: 700; 
             }
         }
@@ -375,9 +376,9 @@ footer#footer {
             color: white;
             font-size: 22px;
             transition: 0.3s;
-            font-weight: 700;
+            font-weight: 500;
             &:hover {
-              font-weight: 900;
+              font-weight: 700;
             }
           }
         }

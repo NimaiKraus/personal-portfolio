@@ -23,16 +23,18 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
+    setTimeout(() => {
+      setButtonText("Send");
+      setFormData(initialFormData)
+    }, 2000);
     await axios
-    .post("http://localhost:5000/contact", formData)
-    .then((res) => {
-      console.log(res);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-    setButtonText("Send");
-      setFormData(initialFormData);
+      .post("http://localhost:5000/contact", formData)
+      .then((res) => {
+        console.log(res, "resssss");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
@@ -58,6 +60,7 @@ function Contact() {
                   type="text"
                   className="form-control"
                   id="firstNameInput"
+                  value={formData.firstName}
                 />
               </div>
               <div className="mb-3">
@@ -69,6 +72,7 @@ function Contact() {
                   type="text"
                   className="form-control"
                   id="lastNameInput"
+                  value={formData.lastName}
                 />
               </div>
               <div className="mb-3">
@@ -80,6 +84,7 @@ function Contact() {
                   type="tel"
                   className="form-control"
                   id="phoneInput"
+                  value={formData.phone}
                 />
               </div>
               <div className="mb-3">
@@ -91,6 +96,7 @@ function Contact() {
                   type="email"
                   className="form-control"
                   id="InputEmail"
+                  value={formData.email}
                 />
               </div>
               <div className="mb-3">
@@ -100,6 +106,7 @@ function Contact() {
                 <textarea
                   onChange={(e) => handleInputChange("message", e)}
                   id="textarea"
+                  value={formData.message}
                 />
               </div>
               <button type="submit" className="contact-btn">
