@@ -17,9 +17,12 @@ function Banner() {
     });
 
     return () => {
+      
       typed.destroy();
     }
   }, []);
+
+  
 
   return (
     <div className="container-fluid banner-container">

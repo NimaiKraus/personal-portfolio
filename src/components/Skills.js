@@ -1,8 +1,17 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter3 from "../assets/img/meter3.svg";
-import meter2 from "../assets/img/meter2.svg";
+import jsIcon from "../assets/img/jsIcon.png";
+import bootstrapIcon from "../assets/img/bootstrap.png";
+import jqueryIcon from "../assets/img/jquery.png";
+import laravelIcon from "../assets/img/laravel.png";
+import mongoDbIcon from "../assets/img/mongodb.png";
+import mySqlIcon from "../assets/img/mysql.png";
+import nodeIcon from "../assets/img/node-js.png";
+import phpIcon from "../assets/img/php.png";
+import reactIcon from "../assets/img/react.png";
+import sassIcon from "../assets/img/sass.png";
+import tailwindIcon from "../assets/img/tailwind.png";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
 
@@ -36,7 +45,7 @@ function Skills() {
                 className={
                   isVisible
                     ? "col-12 animate__animated animate__flipInX"
-                    : "col-12"
+                    : "col-12 hidden"
                 }
               >
                 <h1 className="skills-title">Skills</h1>
@@ -45,16 +54,48 @@ function Skills() {
                 </p>
                 <Carousel responsive={responsive} infinite={true}>
                   <div className="item">
-                    <img className="mb-2" src={meter3} alt="item" />
-                    <h5>Web development</h5>
+                    <img className="mb-2" src={jsIcon} alt="item" />
+                    <h5>Javascript</h5>
                   </div>
                   <div className="item">
-                    <img className="mb-2" src={meter2} alt="item" />
-                    <h5>Problem solving</h5>
+                    <img className="mb-2" src={nodeIcon} alt="item" />
+                    <h5>Node.js</h5>
                   </div>
                   <div className="item">
-                    <img className="mb-2" src={meter3} alt="item" />
-                    <h5>Teamwork</h5>
+                    <img className="mb-2" src={reactIcon} alt="item" />
+                    <h5>React</h5>
+                  </div>
+                  <div className="item">
+                    <img className="mb-2" src={sassIcon} alt="item" />
+                    <h5>Sass</h5>
+                  </div>
+                  <div className="item">
+                    <img className="mb-2" src={phpIcon} alt="item" />
+                    <h5>PHP</h5>
+                  </div>
+                  <div className="item">
+                    <img className="mb-2" src={laravelIcon} alt="item" />
+                    <h5>Laravel</h5>
+                  </div>
+                  <div className="item">
+                    <img className="mb-2" src={tailwindIcon} alt="item" />
+                    <h5>Tailwind</h5>
+                  </div>
+                  <div className="item">
+                    <img className="mb-2" src={bootstrapIcon} alt="item" />
+                    <h5>Bootstrap</h5>
+                  </div>
+                  <div className="item">
+                    <img className="mb-2" src={mongoDbIcon} alt="item" />
+                    <h5>Mongodb</h5>
+                  </div>
+                  <div className="item">
+                    <img className="mb-2" src={jqueryIcon} alt="item" />
+                    <h5>Jquery</h5>
+                  </div>
+                  <div className="item">
+                    <img className="mb-2" src={mySqlIcon} alt="item" />
+                    <h5>MySql</h5>
                   </div>
                 </Carousel>
               </div>

@@ -10,22 +10,22 @@ const projects = [
     title: "live chat application",
     description:
       "A project realized with react, tailwind and chat engine components.",
-    img: dashboardScreen,
-    url: "https://nimai-syncfusion-react-dashboard.netlify.app/",
+    img: livechatScreen,
+    url: "https://nimai-react-chat-app.netlify.app/",
   },
   {
     title: "real estate application",
     description:
-      "A project realized with react, next.js with SSR and SSG and chakra ui.",
-    img: livechatScreen,
+      "A project realized with react, next.js using SSR and SSG and chakra ui.",
+    img:  realEstateScreen,
     url: "https://real-estate-next-app-steel.vercel.app/",
   },
   {
     title: "admin dashboard",
     description:
       "An admin dashboard realized with react and syncfusion components with a lot of functionalities.",
-    img: realEstateScreen,
-    url: "https://nimai-react-chat-app.netlify.app/",
+    img: dashboardScreen,
+    url: "https://nimai-syncfusion-react-dashboard.netlify.app/",
   },
 ];
 
@@ -34,7 +34,7 @@ function Projects() {
     <div className="container projects-container" id="projects">
       <TrackVisibility once={true} >
         {({ isVisible }) => (
-          <div className={isVisible ? "animate__animated animate__flipInX" : ""}>
+          <div className={isVisible ? "animate__animated animate__flipInX" : "hidden"}>
             <div className="row">
               <h1 className="projects-header">Projects</h1>
               <p className="projects-text">
