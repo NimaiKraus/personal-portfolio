@@ -3,18 +3,10 @@ import TrackVisibility from "react-on-screen";
 import "animate.css";
 
 import dashboardScreen from "../assets/img/dashboardScreen.png";
-import livechatScreen from "../assets/img/livechatScreen.png";
 import realEstateScreen from "../assets/img/realEstateScreen.png";
 import autoSaloon from "../assets/img/auto-saloon.png";
 
 const projects = [
-  {
-    title: "live chat application",
-    description:
-      "A project realized with react, tailwind and chat engine components.",
-    img: livechatScreen,
-    url: "https://nimai-react-chat-app.netlify.app/",
-  },
   {
     title: "real estate application",
     description:
