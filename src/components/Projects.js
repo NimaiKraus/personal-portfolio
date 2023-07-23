@@ -1,9 +1,11 @@
 import React from "react";
+import TrackVisibility from "react-on-screen";
+import "animate.css";
+
 import dashboardScreen from "../assets/img/dashboardScreen.png";
 import livechatScreen from "../assets/img/livechatScreen.png";
 import realEstateScreen from "../assets/img/realEstateScreen.png";
-import TrackVisibility from "react-on-screen";
-import "animate.css";
+import autoSaloon from "../assets/img/auto-saloon.png";
 
 const projects = [
   {
@@ -26,6 +28,13 @@ const projects = [
       "An admin dashboard realized with react and syncfusion components with a lot of functionalities.",
     img: dashboardScreen,
     url: "https://nimai-syncfusion-react-dashboard.netlify.app/",
+  },
+  {
+    title: "car showcase",
+    description:
+      "A car showcase realized with next.js latest version, tailwind and headless ui.",
+    img: autoSaloon,
+    url: "https://nimai-auto-saloon.vercel.app/",
   },
 ];
 
