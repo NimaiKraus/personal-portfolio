@@ -44,7 +44,7 @@ function Skills() {
               <div
                 className={
                   isVisible
-                    ? "col-12 animate__animated animate__flipInX"
+                    ? "col-12 animate__animated animate__zoomIn"
                     : "col-12 hidden"
                 }
               >

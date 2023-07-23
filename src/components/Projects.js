@@ -43,8 +43,8 @@ function Projects() {
     <div className="container projects-container" id="projects">
       <TrackVisibility once={true} >
         {({ isVisible }) => (
-          <div className={isVisible ? "animate__animated animate__flipInX" : "hidden"}>
-            <div className="row">
+          <div className={isVisible ? "animate__animated animate__zoomIn" : "hidden"}>
+            <div className="row justify-content-center">
               <h1 className="projects-header">Projects</h1>
               <p className="projects-text">
                 Here you can check out some of my projects
