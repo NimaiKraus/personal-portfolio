@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import headerimg from "../assets/img/header-img.svg";
 import Typed from "typed.js";
-import { BsHeart, BsHeartFill } from 'react-icons/bs';
 import TrackVisibility from "react-on-screen";
 import "animate.css";
 
